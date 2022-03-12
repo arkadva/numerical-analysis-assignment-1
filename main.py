@@ -10,5 +10,6 @@ print("The machine epsilon is:", eps)
 print(fabs(3.0*(4.0/3.0-1)-1))
 
 # mathematically correct outputs
-print(fabs(3.0*(4.0/3.0-1)-1) - eps) # דרך ראשונה
-print(fabs((3.0*4.0/3.0-3.0*1)-1)) # דרך שניה - פתיחת סוגריים מתמטית
+print(round(fabs(3.0*(4.0/3.0-1) - 1))) # דרך ראשונה
+print(fabs((3.0*4.0/3.0-3.0*1) - 1)) # דרך שניה - פתיחת סוגריים מתמטית
+print(fabs(3.0*(4.0/3.0-1) - 1) - eps) # דרך שלישית
